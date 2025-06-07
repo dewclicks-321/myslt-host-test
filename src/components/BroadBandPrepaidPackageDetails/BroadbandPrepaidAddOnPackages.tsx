@@ -115,7 +115,7 @@ const BroadbandPrepaidAddOnPackages: React.FC = () => {
     console.log(error);
   }
  
-  const goToSlide = (index) => {
+  const goToSlide = (index: number) => {
     if (scrollRef.current) {
       const itemWidth = 280;
       const containerWidth = scrollRef.current.clientWidth;

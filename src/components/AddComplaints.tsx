@@ -33,7 +33,7 @@ const AddComplaints: React.FC<AddComplaintsProps> = ({ telephoneNo }) => {
   const [serviceOption, setServiceOption] = useState("All");
   const [contactNo, setContactNo] = useState("");
   const [faultDescription, setFaultDescription] = useState("");
-  const [status, setStatus] = useState(serviceStatus || "");  // Default to serviceStatus if available
+  const [status, _setStatus] = useState(serviceStatus || "");  // Default to serviceStatus if available
 
   // Dialog States
   const [isDialogOpen, setIsDialogOpen] = useState(false);

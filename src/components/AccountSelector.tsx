@@ -9,11 +9,11 @@ import "./AccountSelector.css";
 const AccountSelector = () => {
   const { fetchServiceDetails, setSelectedTelephone } = useStore();
   const [account, setAccount] = useState(""); // Selected account
-  const [openDropdown, setOpenDropdown] = useState(false); // Dropdown open/close state
+  const [_openDropdown, setOpenDropdown] = useState(false); // Dropdown open/close state
   const [accounts, setAccounts] = useState<AccountDetails[]>([
     {
       telephoneno: "0332245971",
-      accountNo: undefined,
+      // accountNo: undefined,
       accountno: "",
       status: "",
     }, // Hardcoded phone number

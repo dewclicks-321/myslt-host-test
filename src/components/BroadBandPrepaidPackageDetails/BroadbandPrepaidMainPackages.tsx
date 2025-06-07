@@ -119,7 +119,7 @@ const BroadbandPrepaidMainPackages: React.FC = () => {
     );
   }
 
-  const goToSlide = (index) => {
+  const goToSlide = (index: number) => {
     if (scrollRef.current) {
       const itemWidth = 280;
       const containerWidth = scrollRef.current.clientWidth;

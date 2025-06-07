@@ -1,7 +1,7 @@
 import { Box, Button, CircularProgress, Typography } from "@mui/material";
 import React, { useEffect } from "react";
-import fetchBillStatus from "../../services/billMethod/fetchBillStatus";
-import useStore from "../../services/useAppStore";
+// import fetchBillStatus from "../../services/billMethod/fetchBillStatus";
+// import useStore from "../../services/useAppStore";
 import fetchBillingDetails from "../../services/postpaid/fetchBillingDetails";
 
 interface BillingDetail {

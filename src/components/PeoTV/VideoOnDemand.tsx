@@ -7,6 +7,7 @@ const VideoOnDemand = () => {
   const [showAlert, setShowAlert] = useState(false);
 
   useEffect(() => {
+    // @ts-ignore
     if (!serviceDetails?.listofVODService?.length) {
       setShowAlert(true);
     }
@@ -51,12 +52,15 @@ const VideoOnDemand = () => {
       {/* Main Content Box */}
       <Box sx={containerStyle}>
         <Box sx={contentBoxStyle}>
+          {/* @ts-ignore */}
           {serviceDetails?.listofVODService?.length > 0 ? (
             <>
               <Typography variant="body2" sx={textStyle}>
+                {/* @ts-ignore */}
                 {`Service ID : ${serviceDetails.listofVODService[0].serviceID}`}
               </Typography>
               <Typography variant="body2" sx={{ ...textStyle, fontSize: "36px" }}>
+                {/* @ts-ignore */}
                 {serviceDetails.listofVODService[0].movieTitle}
               </Typography>
               <Typography variant="body2" sx={{ ...textStyle, fontSize: "36px" }}>
@@ -66,6 +70,7 @@ const VideoOnDemand = () => {
                   component={"span"}
                   sx={{ color: "#4FD745", fontSize: "36px", fontWeight: 600 }}
                 >
+                  {/* @ts-ignore */}
                   {serviceDetails.listofVODService[0].serviceStatus}
                 </Typography>
               </Typography>

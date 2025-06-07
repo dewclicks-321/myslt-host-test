@@ -21,7 +21,7 @@ const OutstandingBills: React.FC<BillHistoryProps> = ({
   const billMethodDataBundle = useStore((state) => state.billMethodDataBundle);
   const [openDialog, setOpenDialog] = useState(false); // State to handle the dialog visibility
   const [dialogMessage, setDialogMessage] = useState(""); // State to hold the dialog message
-  const [emailAddress, setEmailAddress] = useState<string>(""); // State to store the email address
+  const [_emailAddress, setEmailAddress] = useState<string>(""); // State to store the email address
 
   useEffect(() => {
     // Log the billMethodDataBundle whenever it's updated
@@ -51,7 +51,7 @@ const OutstandingBills: React.FC<BillHistoryProps> = ({
 
   // Log the billViewMonth from each bill in the billHistoryList
   billHistoryList.forEach((bill, index) => {
-    console.log(`Bill View Month for Bill ${index + 1}:`, bill.billViewMonth);
+    console.log(`Bill View Month for Bill ${index + 1}:`, bill.billMonth);
   });
 
   // Handle eBill download
@@ -192,7 +192,7 @@ const OutstandingBills: React.FC<BillHistoryProps> = ({
                         backgroundColor: "#f0f0f0",
                       },
                     }}
-                    onClick={() => handleEmailNow(eBillEmail, accountNo, telephoneNo, String(bill.billViewMonth))} // Ensure it's a string
+                    onClick={() => handleEmailNow(eBillEmail, accountNo, telephoneNo, String(bill.billMonth))} // Ensure it's a string
                   >
                     <Typography variant="body2">
                       Email Now
@@ -214,7 +214,7 @@ const OutstandingBills: React.FC<BillHistoryProps> = ({
                         backgroundColor: "#f0f0f0",
                       },
                     }}
-                    onClick={() => handleDownloadBill(eBillEmail, accountNo, telephoneNo, String(bill.billViewMonth))} // Ensure it's a string
+                    onClick={() => handleDownloadBill(eBillEmail, accountNo, telephoneNo, String(bill.billMonth))} // Ensure it's a string
                   >
                     <Typography variant="body2">
                       Download eBill
