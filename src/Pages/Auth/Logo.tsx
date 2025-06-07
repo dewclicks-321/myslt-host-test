@@ -7,7 +7,7 @@ const Logo: React.FC = () => {
   return (
     <div className="logo">
       <Link to="/home">
-        <img src="src/assets/logo.png" alt="SLT MOBITEL" />
+        <img src="/logo.png" alt="SLT MOBITEL" />
       </Link>
     </div>
   );
