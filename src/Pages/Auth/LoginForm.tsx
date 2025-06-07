@@ -136,13 +136,13 @@ const LoginForm: React.FC<LoginFormProps> = ({ defaultTab = 'login' }) => {
             
             <div className="social-login">
               <button type="button" className="social-button google">
-                <img src="src/assets/google.png" alt="Google" />
+                <img src="/google.png" alt="Google" />
               </button>
               <button type="button" className="social-button facebook">
-                <img src="src/assets/facebook.png" alt="Facebook" />
+                <img src="/facebook.png" alt="Facebook" />
               </button>
               <button type="button" className="social-button apple">
-                <img src="src/assets/apple.png" alt="Apple" />
+                <img src="/apple.png" alt="Apple" />
               </button>
             </div>
             
@@ -267,13 +267,13 @@ const LoginForm: React.FC<LoginFormProps> = ({ defaultTab = 'login' }) => {
             
             <div className="social-login">
               <button type="button" className="social-button google">
-                <img src="src/assets/google.png" alt="Google" />
+                <img src="/google.png" alt="Google" />
               </button>
               <button type="button" className="social-button facebook">
-                <img src="src/assets/facebook.png" alt="Facebook" />
+                <img src="/facebook.png" alt="Facebook" />
               </button>
               <button type="button" className="social-button apple">
-                <img src="src/assets/apple.png" alt="Apple" />
+                <img src="/apple.png" alt="Apple" />
               </button>
             </div>
           </form>
