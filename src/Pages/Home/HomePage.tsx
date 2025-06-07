@@ -77,7 +77,7 @@ const HomePage: React.FC = () => {
             
             <div className={`main-content`}>
                 <div className={`slt-logo ${animationCompleted ? 'animate-logo' : ''}`}>
-                    <img src="src/assets/slt-mobitel-logo.svg" alt="SLT MOBITEL" className="logo-image" />
+                    <img src="/slt-mobitel-logo.svg" alt="SLT MOBITEL" className="logo-image" />
                 </div>
                 
                 <div className={`marketing-message top-message ${platformAnimationCompleted ? 'fade-in-element' : 'hidden-element'}`}>
@@ -89,8 +89,8 @@ const HomePage: React.FC = () => {
                 </div>
                 
                 <div className={`fiber-mascot ${animationCompleted ? 'animate-mascot' : ''}`}>
-                    <img src="src/assets/fiber-mascot.png" alt="FibreOn Mascot" className="mascot-image" />
-                    <img src="src/assets/platform-circle.png" alt="Platform" className={`mascot-platform ${animationCompleted ? 'animate-platform' : ''}`} />
+                    <img src="/fiber-mascot.png" alt="FibreOn Mascot" className="mascot-image" />
+                    <img src="/platform-circle.png" alt="Platform" className={`mascot-platform ${animationCompleted ? 'animate-platform' : ''}`} />
                 </div>
                 
                 <div className={`next-button ${platformAnimationCompleted ? 'fade-in-element' : 'hidden-element'}`}>
@@ -101,7 +101,7 @@ const HomePage: React.FC = () => {
                 
                 <div className={`promo-video ${platformAnimationCompleted ? 'fade-in-element' : 'hidden-element'}`}>
                     <video ref={videoRef} autoPlay loop muted onClick={toggleVideoPlayback}>
-                        <source src="src/assets/promo-video.mp4" type="video/mp4" />
+                        <source src="/promo-video.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
 
@@ -125,7 +125,7 @@ const HomePage: React.FC = () => {
             <div className={`chatbot-container ${platformAnimationCompleted ? 'fade-in-element' : 'hidden-element'}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <div className="chatbot-icon">
                     <video autoPlay loop muted>
-                        <source src="src/assets/chatbot-icon.mp4" type="video/mp4" />
+                        <source src="/chatbot-icon.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
