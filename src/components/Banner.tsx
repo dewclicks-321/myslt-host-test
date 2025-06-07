@@ -3,11 +3,11 @@ import fetchBannerData from "../services/fetchBannerData";
 import { useTranslation } from 'react-i18next';
 import { BannerData } from "../types/types";
 import "./Banner.css";
-import vas1 from "../assets/images/VASIcons/Group39680.png";
-import vas2 from "../assets/images/VASIcons/Group39681.png";
-import vas3 from "../assets/images/VASIcons/Group39682.png";
-import vas4 from "../assets/images/VASIcons/Group39683.png";
-import vas5 from "../assets/images/VASIcons/Group39684.png";
+import vas1 from "../assets/Group39680.png";
+import vas2 from "../assets/Group39681.png";
+import vas3 from "../assets/Group39682.png";
+import vas4 from "../assets/Group39683.png";
+import vas5 from "../assets/Group39684.png";
 
 
 const Banner = () => {
