@@ -49,8 +49,8 @@ const PeoTvPackages = () => {
       {/* Main Content Box */}
       <Box sx={containerStyle}>
         <Box sx={contentBoxStyle}>
-          {serviceDetails?.listofPEOService?.length > 0 ? (
-            serviceDetails.listofPEOService.map((packageItem, index) => (
+          {serviceDetails?.listofPEOService && serviceDetails.listofPEOService.length > 0 ? (
+            serviceDetails?.listofPEOService?.map((packageItem, index) => (
               <Typography key={index} variant="body2" sx={textStyle}>
                 {`${packageItem.packageName} - ${packageItem.serviceStatus}`}
               </Typography>

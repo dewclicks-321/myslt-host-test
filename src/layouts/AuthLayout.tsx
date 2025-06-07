@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import Navbar from '../Pages/Auth/Navbar';
 import VideoBackground from '../Pages/Auth/VideoBackground';
 import '../../src/App.css';

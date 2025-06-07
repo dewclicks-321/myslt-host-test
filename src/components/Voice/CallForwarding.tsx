@@ -19,7 +19,7 @@ import checkCallForwardingStatus from "../../services/postpaid/Voice/checkCallFo
 
 const CallForwarding: React.FC<{ telephoneNo: string }> = ({ telephoneNo }) => {
   const [statusMessage, setStatusMessage] = useState<string>(""); // State for status message
-  const [errorMessage, setErrorMessage] = useState<string>("");// State for error message
+  const [_errorMessage, setErrorMessage] = useState<string>("");// State for error message
   const [isSuccess, setIsSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const [showMessage, setShowMessage] = useState(false);

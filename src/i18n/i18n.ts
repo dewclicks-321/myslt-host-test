@@ -8,18 +8,7 @@ import enTranslations from './locales/en.json';
 import siTranslations from './locales/si.json';
 import taTranslations from './locales/ta.json';
 
-// Define the structure of translation resources
-interface TranslationResource {
-  translation: Record<string, any>;
-}
-
-interface Resources {
-  en: TranslationResource;
-  si: TranslationResource;
-  ta: TranslationResource;
-}
-
-const resources: Resources = {
+const resources = {
   en: {
     translation: enTranslations
   },

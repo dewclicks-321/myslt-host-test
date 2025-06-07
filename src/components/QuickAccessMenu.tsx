@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 import { 
   // FaGift, 
@@ -12,11 +12,16 @@ import {
 import "./QuickAccessMenu.css";
 import useStore from "../services/useAppStore";
 
+interface QuickAccessItem {
+  label: string;
+  labelKey: string;
+  icon: React.ReactElement;
+  disabled: boolean;
+}
 
 const QuickAccessMenu = () => {
   const { t } = useTranslation();
   const [selectedItem, setSelectedItem] = useState("");
-  const [hoverIndex, setHoverIndex] = useState(-1);
   
   const {
     selectedTelephone,
@@ -29,7 +34,7 @@ const QuickAccessMenu = () => {
   
   const isPrepaid = serviceDetails?.promotionType === "Prepaid";
 
-  const quickAccessItems = [
+  const quickAccessItems: QuickAccessItem[] = [
     // {
     //   label: t('quickAccessMenu.promotion'),
     //   icon: <FaGift />,
@@ -78,7 +83,7 @@ const QuickAccessMenu = () => {
     window.open("https://eteleshop.slt.lk/", "_blank");
   };
 
-  const handleItemClick = (item) => {
+  const handleItemClick = (item: QuickAccessItem) => {
     if (item.labelKey === "Hot Devices") {
       handleRedirect();
     } else if (!item.disabled) {
@@ -116,8 +121,6 @@ const QuickAccessMenu = () => {
             key={index}
             className={`access-card ${selectedItem === item.labelKey ? 'selected' : ''} ${item.disabled ? 'disabled' : ''}`}
             onClick={() => handleItemClick(item)}
-            onMouseEnter={() => !item.disabled && setHoverIndex(index)}
-            onMouseLeave={() => setHoverIndex(-1)}
           >
             <div className="icon-container">
               {item.icon}

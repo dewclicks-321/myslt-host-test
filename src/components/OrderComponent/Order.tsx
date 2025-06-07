@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./OrderAnimation.css";
 import { Typography } from "@mui/material";
 import gsap from "gsap";
@@ -111,32 +111,32 @@ const OrderAnimation = () => {
     });
   };
   
-  const resetAnimation = () => {
-    setIsAnimating(false);
-    setIsDone(false);
+  // const resetAnimation = () => {
+  //   setIsAnimating(false);
+  //   setIsDone(false);
     
-    const button = buttonRef.current;
-    const box = boxRef.current;
-    const truck = truckRef.current;
+  //   const button = buttonRef.current;
+  //   const box = boxRef.current;
+  //   const truck = truckRef.current;
     
-    if (!button || !box || !truck) return;
+  //   if (!button || !box || !truck) return;
     
-    gsap.set(truck, { x: 4 });
+  //   gsap.set(truck, { x: 4 });
     
-    gsap.set(button, {
-      '--rx': '0deg',
-      '--br': '5px',
-      '--progress': 0,
-      '--hx': 0,
-      '--bx': 0,
-      '--box-s': 0.5,
-      '--box-o': 0,
-      '--truck-y': 0,
-      '--truck-y-n': -26
-    });
+  //   gsap.set(button, {
+  //     '--rx': '0deg',
+  //     '--br': '5px',
+  //     '--progress': 0,
+  //     '--hx': 0,
+  //     '--bx': 0,
+  //     '--box-s': 0.5,
+  //     '--box-o': 0,
+  //     '--truck-y': 0,
+  //     '--truck-y-n': -26
+  //   });
     
-    gsap.set(box, { x: -24, y: -6 });
-  };
+  //   gsap.set(box, { x: -24, y: -6 });
+  // };
 
   return (
     <button

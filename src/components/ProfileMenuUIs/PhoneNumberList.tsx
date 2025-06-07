@@ -37,7 +37,7 @@ const PhoneNumberList: React.FC = () => {
       if (accountData) {
         const phoneNumbersList = accountData.map((item) => ({
           phoneNumber: item.telephoneno,
-          accountNo: item.accountNo,
+          accountNo: item.accountno,
         }));
         setPhoneNumbers(phoneNumbersList);
       }
