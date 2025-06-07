@@ -6,7 +6,7 @@ const SharedBackground: React.FC = () => {
   return (
     <div className="shared-background">
       <img 
-        src="src/assets/bg-main.png" 
+        src="/bg-main.png" 
         alt="Background" 
         className="background-image"
       />
