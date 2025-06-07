@@ -1,0 +1,195 @@
+{
+  "common": {
+    "underConstruction": "Under Construction",
+    "loading": "Loading...",
+    "error": "Error",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "back": "Back",
+    "next": "Next"
+  },
+  "menu": {
+    "summary": "Summary",
+    "dailyUsage": "Daily Usage",
+    "giftData": "Gift Data",
+    "history": "History",
+    "redeemData": "Redeem Data",
+    "happyDay": "Happy Day",
+    "subscription": "Subscription",
+    "contactInformationChange": "Change Contact Information",
+    "broadbandPasswordChange": "Change Broadband Password",
+    "detailedUsageDetails": "Detailed Usage Details",
+    "protocolReport": "Protocol Report",
+    "postPaidPackageUpgrade": "Package Upgrade",
+    "getExtraGB": "Get Extra GB",
+    "getPostpaidAddOnPackages": "Get Data Add-Ons",
+    "disableDetailReport": "Disable Detail Report",
+    "mainPackages": "Main Packages",
+    "dataAddOns": "Data Add-Ons",
+    "getBroadbandMainPackage": "Get Broadband Main Package",
+    "getBroadbandAddOnPackage": "Get Broadband Add-On Package",
+    "transaction": "Transaction",
+    "myPackage": "My Package",
+    "vod": "Video On Demand",
+    "peoTvGo": "PeoTV Go",
+    "packages": "Packages",
+    "callForwarding": "Call Forwarding",
+    "newServices": "New Services",
+    "promotion": "Promotion",
+    "digitalLife": "Digital Life",
+    "bill": "Bill",
+    "hotDevices": "Hot Devices",
+    "complaints": "Complaints",
+    "submitComplaint": "Submit Your Complaint",
+    "myProfile": "My Profile",
+    "manageConnections": "Manage Connections",
+    "more": "More"
+  },
+  "navbar": {
+    "broadband": "Broadband",
+    "peoTV": "PeoTV",
+    "voice": "Voice",
+    "mobile": "Mobile",
+    "promotions": "Promotions"
+  },
+  "languages": {
+    "english": "English",
+    "sinhala": "සිංහල",
+    "tamil": "தமிழ்"
+  },
+  "quickAccessMenu": {
+    "newServices": "New Services",
+    "digitalLife": "Digital Life",
+    "bill": "Bill",
+    "hotDevices": "Hot Devices",
+    "complaints": "Complaints",
+    "more": "More"
+  },
+  "valueAddedServices": {
+    "valueAddedServices": "Value Added Services"
+  },
+  "accountBalance": {
+    "balance": "Balance :",
+    "totalPayable": "Total Payable :",
+    "currency": "Rs. ",
+    "payNow": "Pay Now",
+    "billHistory": "Bill History"
+  },
+  "broadbandDetails": {
+    "myPackage": "My Package",
+    "extraGB": "Extra GB",
+    "bonusData": "Bonus Data",
+    "addOns": "Add-Ons",
+    "freeData": "Free Data",
+    "yourSpeedStatus": "Your speed is {{status}} right now",
+    "dataUsage": "{{used}} GB USED OF {{limit}} GB",
+    "validTill": "Valid Till : {{date}}",
+    "noDataAvailable": "No data available for this package",
+    "active": "Active",
+    "inactive": "Inactive",
+    "account": "Account",
+    "packageUpgrade": "Package Upgrade",
+    "getExtraGB": "Get Extra GB",
+    "getDataAddOns": "Get Data Add-Ons"
+  },
+  "giftData": {
+    "instructions": {
+      "enterUsername": "Enter the username of the person to whom you wish to",
+      "selectPackage": "Select the package by tapping VALIDATE RECEIVER"
+    },
+    "labels": {
+      "receiversUsername": "Receiver's Username"
+    },
+    "placeholders": {
+      "enterUsername": "Enter username"
+    },
+    "buttons": {
+      "validateReceiver": "Validate Receiver",
+      "continue": "Continue",
+      "close": "Close"
+    },
+    "warnings": {
+      "ensureCorrectUsername": "Ensure the username is correct, as this transaction cannot be reversed."
+    },
+    "messages": {
+      "validationSuccess": "Receiver validated successfully!"
+    },
+    "errors": {
+      "missingSubscriberID": "Subscriber ID or username is missing. Please provide both.",
+      "invalidSubscriberID": "Subscriber ID you entered is Invalid – Please enter a correct Subscriber ID.",
+      "unexpectedError": "Unexpected error occurred during the API call.",
+      "validationError": "An error occurred during validation."
+    },
+    "dialog": {
+      "processing": "Processing",
+      "success": "Success",
+      "processingMessage": "Please wait while we process your request..."
+    }
+  },
+  "redeem": {
+    "instructions": {
+      "enterPromoCode": "Enter The Promo Code On The Voucher To",
+      "availOffer": "Avail Yourself Of The Offer."
+    },
+    "labels": {
+      "enterVoucherID": "Enter your voucher ID:"
+    },
+    "placeholders": {
+      "voucherID": "Enter voucher ID"
+    },
+    "buttons": {
+      "redeemVoucher": "REDEEM VOUCHER",
+      "processing": "Processing..."
+    },
+    "messages": {
+      "successDefault": "Voucher redeemed successfully!"
+    },
+    "errors": {
+      "enterVoucherID": "Please enter a voucher ID.",
+      "serviceIDMissing": "Service ID is missing. Unable to redeem voucher.",
+      "redeemFailed": "Failed to redeem voucher. Please try again.",
+      "unexpectedError": "An unexpected error occurred. Please try again."
+    },
+    "dialog": {
+      "processing": "Processing",
+      "success": "Success",
+      "processingMessage": "Please wait while we process your voucher..."
+    }
+  },
+  "circularProgress": {
+  "remaining": "REMAINING",
+  "used": "USED"
+},
+"extraGB": {
+    "pricePlan": "Price Plan",
+    "currency": "LKR",
+    "tax": "Tax",
+    "dataPlans": {
+      "range1to3": "1GB to 3GB",
+      "range5to19": "5GB to 19GB",
+      "range20to49": "20GB to 49GB",
+      "above50": "Above 50GB"
+    },
+    "paymentMethods": {
+      "addToBill": "Add to Bill",
+      "payNow": "Pay Now"
+    },
+    "termsAndConditions": {
+      "agree": "I agree to the",
+      "termsLink": "general terms and conditions"
+    },
+    "messages": {
+      "success": "Success",
+      "addToBillSuccess": "Package added to your bill successfully"
+    },
+    "errors": {
+      "selectAllOptions": "Please select all required options",
+      "planNotFound": "Selected plan not found",
+      "addToBillFailed": "Failed to add to bill",
+      "noPackageOptions": "No package options available",
+      "loadPackageOptions": "Failed to load package options",
+      "unexpectedError": "An unexpected error occurred"
+    }
+  }
+}

@@ -1,0 +1,186 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.content-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 2rem;
+  height: 100vh;
+}
+
+/* Video background styles */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+  
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 100, 0.7) 0%, rgba(0, 200, 150, 0.7) 100%);
+}
+
+/* Left side content */
+.left-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding-right: 2rem;
+}
+
+.tagline {
+  margin-top: auto;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.tagline h2 {
+  font-size: 16px;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.app-button {
+  display: block;
+  max-width: 180px;
+}
+
+.app-button img {
+  width: 100%;
+  height: auto;
+}
+
+/* Navbar now inside left-side */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+
+
+/* Login container adjustments */
+
+
+@media (max-width: 1100px) {
+  .main-content {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  
+  .left-side {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .login-container {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .navbar {
+    justify-content: center;
+  }
+  
+  .tagline {
+    margin-bottom: 2rem;
+  }
+  
+  .app-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .tagline h2 {
+    font-size: 1.4rem;
+  }
+  
+  .app-button {
+    max-width: 150px;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link {
+    font-size: 0.9rem;
+  }
+  
+  .app-button {
+    max-width: 130px;
+  }
+  
+  .login-form-wrapper {
+    padding: 1rem;
+  }
+}

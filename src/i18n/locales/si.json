@@ -1,0 +1,195 @@
+{
+  "common": {
+    "underConstruction": "ඉදිකිරීම් යටතේ",
+    "loading": "පූරණය වෙමින්...",
+    "error": "දෝෂයක්",
+    "submit": "ඉදිරිපත් කරන්න",
+    "cancel": "අවලංගු කරන්න",
+    "save": "සුරකින්න",
+    "back": "ආපසු",
+    "next": "ඊළඟ"
+  },
+  "menu": {
+    "summary": "සාරාංශය",
+    "dailyUsage": "දෛනික භාවිතය",
+    "giftData": "ගිෆ්ට් ඩේටා",
+    "history": "ඉතිහාසය",
+    "redeemData": "ඩේටා ප්‍රතිෂ්ඨාපනය",
+    "happyDay": "සතුටු දිනය",
+    "subscription": "දායකත්වය",
+    "contactInformationChange": "සම්බන්ධතා තොරතුරු වෙනස් කරන්න",
+    "broadbandPasswordChange": "බ්‍රෝඩ්බෑන්ඩ් මුරපදය වෙනස් කරන්න",
+    "detailedUsageDetails": "විස්තරාත්මක භාවිත විස්තර",
+    "protocolReport": "ප්‍රොටොකෝල් වාර්තාව",
+    "postPaidPackageUpgrade": "පැකේජ් උත්ශ්‍රේණිගත කිරීම",
+    "getExtraGB": "අතිරික්ත GB ලබා ගන්න",
+    "getPostpaidAddOnPackages": "ඇඩ්-ඔන් පැකේජ් ලබා ගන්න",
+    "disableDetailReport": "විස්තරාත්මක වාර්තාව අබල කරන්න",
+    "mainPackages": "ප්‍රධාන පැකේජ්",
+    "dataAddOns": "ඩේටා ඇඩ්-ඔන්",
+    "getBroadbandMainPackage": "බ්‍රෝඩ්බෑන්ඩ් ප්‍රධාන පැකේජය ලබා ගන්න",
+    "getBroadbandAddOnPackage": "බ්‍රෝඩ්බෑන්ඩ් ඇඩ්-ඔන් පැකේජය ලබා ගන්න",
+    "transaction": "ගනුදෙනුව",
+    "myPackage": "මගේ පැකේජය",
+    "vod": "වීඩියෝ ඔන් ඩිමාන්ඩ්",
+    "peoTvGo": "පීඕ ටීවී ගෝ",
+    "packages": "පැකේජ්",
+    "callForwarding": "ඇමතුම් ප්‍රේෂණය",
+    "newServices": "නව සේවා",
+    "promotion": "ප්‍රවර්ධන",
+    "digitalLife": "ඩිජිටල් ජීවිතය",
+    "bill": "බිල්පත",
+    "hotDevices": "ජනප්‍රිය උපකරණ",
+    "complaints": "පැමිණිලි",
+    "submitComplaint": "ඔබේ පැමිණිල්ල ඉදිරිපත් කරන්න",
+    "myProfile": "මගේ පැතිකඩ",
+    "manageConnections": "සම්බන්ධතා කළමනාකරණය",
+    "more": "තවත්"
+  },
+  "navbar": {
+    "broadband": "බ්‍රෝඩ්බෑන්ඩ්",
+    "peoTV": "පීඕ ටීවී",
+    "voice": "හඬ",
+    "mobile": "දුරකතන",
+    "promotions": "ප්‍රවර්දන"
+  },
+  "languages": {
+    "english": "English",
+    "sinhala": "සිංහල",
+    "tamil": "தமிழ்"
+  },
+  "quickAccessMenu": {
+    "newServices": "නව සේවා",
+    "digitalLife": "ඩිජිටල් ජීවිතය",
+    "bill": "බිල්පත්",
+    "hotDevices": "උණුසුම් උපාංග",
+    "complaints": "පැමිණිලි",
+    "more": "තව"
+  },
+  "valueAddedServices": {
+    "valueAddedServices": "අතිරේක වටිනා සේවා"
+  },
+  "accountBalance": {
+    "balance": "ශේෂය :",
+    "totalPayable": "ගෙවිය යුතු මුළු මුදල :",
+    "currency": "රු. ",
+    "payNow": "දැන් ගෙවන්න",
+    "billHistory": "බිල්පත් ඉතිහාසය"
+  },
+  "broadbandDetails": {
+    "myPackage": "මගේ පැකේජය",
+    "extraGB": "අතිරික්ත GB",
+    "bonusData": "බෝනස් ඩේටා",
+    "addOns": "ඇඩ්-ඔන්",
+    "freeData": "නොමිලේ ඩේටා",
+    "yourSpeedStatus": "ඔබේ වේගය දැන් {{status}} ය",
+    "dataUsage": "{{limit}} GB වලින් {{used}} GB භාවිතා කර ඇත",
+    "validTill": "වලංගු කාලය : {{date}}",
+    "noDataAvailable": "මෙම පැකේජය සඳහා දත්ත නොමැත",
+    "active": "සක්‍රිය",
+    "inactive": "අක්‍රිය",
+    "account": "ගිණුම",
+    "packageUpgrade": "පැකේජ් උත්ශ්‍රේණිගත කිරීම",
+    "getExtraGB": "අතිරේක GB ලබා ගන්න",
+    "getDataAddOns": "ඩේටා ඇඩ්-ඔන් ලබා ගන්න"
+  },
+  "giftData": {
+    "instructions": {
+      "enterUsername": "ඔබ දත්ත තෑගි කිරීමට කැමති පුද්ගලයාගේ පරිශීලක නාමය ඇතුළත් කරන්න.",
+      "selectPackage": "'ලබන්නා තහවුරු කරන්න' බොත්තම ඔබා පැකේජය තෝරන්න"
+    },
+    "labels": {
+      "receiversUsername": "ලබන්නාගේ පරිශීලක නාමය"
+    },
+    "placeholders": {
+      "enterUsername": "පරිශීලක නාමය ඇතුළත් කරන්න"
+    },
+    "buttons": {
+      "validateReceiver": "ලබන්නා තහවුරු කරන්න",
+      "continue": "ඉදිරියට",
+      "close": "වසන්න"
+    },
+    "warnings": {
+      "ensureCorrectUsername": "පරිශීලක නාමය නිවැරදි බව සහතික කරන්න, මෙම ගණුදෙනුව ආපසු හැරවිය නොහැක."
+    },
+    "messages": {
+      "validationSuccess": "ලබන්නා සාර්ථකව තහවුරු කරන ලදී!"
+    },
+    "errors": {
+      "missingSubscriberID": "දායක හැඳුනුම්පත හෝ පරිශීලක නාමය නොමැත. කරුණාකර දෙකම සපයන්න.",
+      "invalidSubscriberID": "ඔබ ඇතුළත් කළ දායක හැඳුනුම්පත වලංගු නොවේ - කරුණාකර නිවැරදි දායක හැඳුනුම්පතක් ඇතුළත් කරන්න.",
+      "unexpectedError": "API ඇමතුම අතරතුර අනපේක්ෂිත දෝෂයක් සිදුවිය.",
+      "validationError": "තහවුරු කිරීම අතරතුර දෝෂයක් සිදුවිය."
+    },
+    "dialog": {
+      "processing": "සැකසෙමින්",
+      "success": "සාර්ථකයි",
+      "processingMessage": "ඔබේ ඉල්ලීම සකසන තෙක් කරුණාකර රැඳී සිටින්න..."
+    }
+  },
+  "redeem": {
+    "instructions": {
+      "enterPromoCode": "වවුචරයේ ප්‍රවර්ධන කේතය ඇතුළත් කර ",
+      "availOffer": "ඔබටඇති පිරිනැමීම ලබා ගන්න."
+    },
+    "labels": {
+      "enterVoucherID": "වවුචරය ඇතුළත් කරන්න:"
+    },
+    "placeholders": {
+      "voucherID": "වවුචර් හැඳුනුම්පත ඇතුළත් කරන්න"
+    },
+    "buttons": {
+      "redeemVoucher": "වවුචරය ප්‍රතිෂ්ඨාපනය කරන්න",
+      "processing": "සකසමින්..."
+    },
+    "messages": {
+      "successDefault": "වවුචරය සාර්ථකව ප්‍රතිෂ්ඨාපනය කරන ලදී!"
+    },
+    "errors": {
+      "enterVoucherID": "කරුණාකර වවුචර් හැඳුනුම්පතක් ඇතුළත් කරන්න.",
+      "serviceIDMissing": "සේවා හැඳුනුම්පත නොමැත. වවුචරය ප්‍රතිෂ්ඨාපනය කළ නොහැක.",
+      "redeemFailed": "වවුචරය ප්‍රතිෂ්ඨාපනය කිරීමට අසමත් විය. කරුණාකර නැවත උත්සාහ කරන්න.",
+      "unexpectedError": "අනපේක්ෂිත දෝෂයක් සිදුවිය. කරුණාකර නැවත උත්සාහ කරන්න."
+    },
+    "dialog": {
+      "processing": "සකසමින්",
+      "success": "සාර්ථකයි",
+      "processingMessage": "ඔබේ වවුචරය සකසන තෙක් කරුණාකර රැඳී සිටින්න..."
+    }
+  },
+  "circularProgress": {
+  "remaining": "ඉතිරි",
+  "used": "භාවිතා කළ"
+},
+"extraGB": {
+    "pricePlan": "මිල සැලැස්ම",
+    "currency": "රු.",
+    "tax": "බදු",
+    "dataPlans": {
+      "range1to3": "1GB සිට 3GB දක්වා",
+      "range5to19": "5GB සිට 19GB දක්වා",
+      "range20to49": "20GB සිට 49GB දක්වා",
+      "above50": "50GB ට වැඩි"
+    },
+    "paymentMethods": {
+      "addToBill": "බිල්පතට එක් කරන්න",
+      "payNow": "දැන් ගෙවන්න"
+    },
+    "termsAndConditions": {
+      "agree": "මම එකඟ වෙමි",
+      "termsLink": "සාමාන්‍ය නියම සහ කොන්දේසි"
+    },
+    "messages": {
+      "success": "සාර්ථකයි",
+      "addToBillSuccess": "පැකේජය ඔබේ බිල්පතට සාර්ථකව එකතු කරන ලදී"
+    },
+    "errors": {
+      "selectAllOptions": "කරුණාකර සියලුම අවශ්‍ය විකල්ප තෝරන්න",
+      "planNotFound": "තෝරාගත් සැලැස්ම හමු නොවිණි",
+      "addToBillFailed": "බිල්පතට එකතු කිරීමට අසමත් විය",
+      "noPackageOptions": "පැකේජ විකල්ප නොමැත",
+      "loadPackageOptions": "පැකේජ විකල්ප පූරණය කිරීමට අසමත් විය",
+      "unexpectedError": "අනපේක්ෂිත දෝෂයක් සිදුවිය"
+    }
+  }
+}

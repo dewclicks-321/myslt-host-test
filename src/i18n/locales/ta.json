@@ -1,0 +1,195 @@
+{
+  "common": {
+    "underConstruction": "கட்டுமானத்தில்",
+    "loading": "ஏற்றுகிறது...",
+    "error": "பிழை",
+    "submit": "சமர்ப்பிக்கவும்",
+    "cancel": "ரத்துசெய்",
+    "save": "சேமிக்கவும்",
+    "back": "பின்",
+    "next": "அடுத்து"
+  },
+  "menu": {
+    "summary": "சுருக்கம்",
+    "dailyUsage": "தினசரி பயன்பாடு",
+    "giftData": "பரிசு தரவு",
+    "history": "வரலாறு",
+    "redeemData": "தரவை மீட்டெடுக்கவும்",
+    "happyDay": "மகிழ்ச்சியான நாள்",
+    "subscription": "சந்தா",
+    "contactInformationChange": "தொடர்பு தகவலை மாற்றவும்",
+    "broadbandPasswordChange": "பிராட்பாண்ட் கடவுச்சொல்லை மாற்றவும்",
+    "detailedUsageDetails": "விரிவான பயன்பாட்டு விவரங்கள்",
+    "protocolReport": "நெறிமுறை அறிக்கை",
+    "postPaidPackageUpgrade": "பேக்கேஜ் மேம்பாடு",
+    "getExtraGB": "கூடுதல் GB பெறவும்",
+    "getPostpaidAddOnPackages": "கூடுதல் பேக்கேஜ்கள் பெறவும்",
+    "disableDetailReport": "விரிவான அறிக்கையை முடக்கவும்",
+    "mainPackages": "முக்கிய பேக்கேஜ்கள்",
+    "dataAddOns": "தரவு கூடுதல்கள்",
+    "getBroadbandMainPackage": "பிராட்பாண்ட் முக்கிய பேக்கேஜ் பெறவும்",
+    "getBroadbandAddOnPackage": "பிராட்பாண்ட் கூடுதல் பேக்கேஜ் பெறவும்",
+    "transaction": "பரிவர்த்தனை",
+    "myPackage": "எனது பேக்கேஜ்",
+    "vod": "வீடியோ ஆன் டிமாண்ட்",
+    "peoTvGo": "பியோ டிவி கோ",
+    "packages": "பேக்கேஜ்கள்",
+    "callForwarding": "அழைப்பு அனுப்புதல்",
+    "newServices": "புதிய சேவைகள்",
+    "promotion": "விளம்பரம்",
+    "digitalLife": "டிஜிட்டல் வாழ்க்கை",
+    "bill": "பில்",
+    "hotDevices": "பிரபலமான சாதனங்கள்",
+    "complaints": "புகார்கள்",
+    "submitComplaint": "உங்கள் புகாரை சமர்ப்பிக்கவும்",
+    "myProfile": "எனது சுயவிவரம்",
+    "manageConnections": "இணைப்புகளை நிர்வகிக்கவும்",
+    "more": "மேலும்"
+  },
+  "navbar": {
+    "broadband": "பிராட்பாண்ட்",
+    "peoTV": "பியோ டிவி",
+    "voice": "குரல்",
+    "mobile": "Mobile",
+    "promotions": "Promotions"
+  },
+  "languages": {
+    "english": "English",
+    "sinhala": "සිංහල",
+    "tamil": "தமிழ்"
+  },
+  "quickAccessMenu": {
+    "newServices": "புதிய சேவைகள்",
+    "digitalLife": "டிஜிட்டல் வாழ்க்கை",
+    "bill": "பில்",
+    "hotDevices": "சூடான சாதனங்கள்",
+    "complaints": "புகார்கள்",
+    "more": "மேலும்"
+  },
+  "valueAddedServices": {
+    "valueAddedServices": "மதிப்பு கூட்டப்பட்ட சேவைகள்"
+  },
+  "accountBalance": {
+    "balance": "இருப்பு :",
+    "totalPayable": "செலுத்த வேண்டிய மொத்த:",
+    "currency": "ரூ. ",
+    "payNow": "இப்போது செலுத்தவும்",
+    "billHistory": "பில் வரலாறு"
+  },
+  "broadbandDetails": {
+    "myPackage": "எனது பேக்கேஜ்",
+    "extraGB": "கூடுதல் GB",
+    "bonusData": "போனஸ் டேட்டா",
+    "addOns": "கூடுதல்கள்",
+    "freeData": "இலவச தரவு",
+    "yourSpeedStatus": "உங்கள் வேகம் இப்போது {{status}} ஆக உள்ளது",
+    "dataUsage": "{{limit}} GB இல் {{used}} GB பயன்படுத்தப்பட்டுள்ளது",
+    "validTill": "செல்லுபடியாகும் தேதி : {{date}}",
+    "noDataAvailable": "இந்த பேக்கேஜிற்கு தரவு கிடைக்கவில்லை",
+    "active": "செயலில்",
+    "inactive": "செயலில் இல்லை",
+    "account": "கணக்கு",
+    "packageUpgrade": "பேக்கேஜ் மேம்பாடு",
+    "getExtraGB": "கூடுதல் GB பெறவும்",
+    "getDataAddOns": "டேட்டா கூடுதல்கள் பெறவும்"
+  },
+  "giftData": {
+    "instructions": {
+      "enterUsername": "நீங்கள் யாருக்கு தரவை வழங்க விரும்புகிறீர்களோ அந்த நபரின் பயனர் பெயரை உள்ளிடவும்",
+      "selectPackage": "VALIDATE RECEIVER ஐ தட்டி பேக்கேஜை தேர்ந்தெடுக்கவும்"
+    },
+    "labels": {
+      "receiversUsername": "பெறுபவரின் பயனர் பெயர்"
+    },
+    "placeholders": {
+      "enterUsername": "பயனர் பெயரை உள்ளிடவும்"
+    },
+    "buttons": {
+      "validateReceiver": "பெறுபவரை சரிபார்க்கவும்",
+      "continue": "தொடரவும்",
+      "close": "மூடவும்"
+    },
+    "warnings": {
+      "ensureCorrectUsername": "பயனர் பெயர் சரியானது என்பதை உறுதிசெய்யவும், இந்த பரிவர்த்தனையை மாற்ற முடியாது."
+    },
+    "messages": {
+      "validationSuccess": "பெறுபவர் வெற்றிகரமாக சரிபார்க்கப்பட்டார்!"
+    },
+    "errors": {
+      "missingSubscriberID": "சந்தாதாரர் ஐடி அல்லது பயனர் பெயர் காணவில்லை. தயவுசெய்து இரண்டையும் வழங்கவும்.",
+      "invalidSubscriberID": "நீங்கள் உள்ளிட்ட சந்தாதாரர் ஐடி தவறானது - தயவுசெய்து சரியான சந்தாதாரர் ஐடியை உள்ளிடவும்.",
+      "unexpectedError": "API அழைப்பின் போது எதிர்பாராத பிழை ஏற்பட்டது.",
+      "validationError": "சரிபார்ப்பின் போது பிழை ஏற்பட்டது."
+    },
+    "dialog": {
+      "processing": "செயலாக்கம்",
+      "success": "வெற்றி",
+      "processingMessage": "உங்கள் கோரிக்கையை செயலாக்கும் வரை காத்திருக்கவும்..."
+    }
+  },
+  "redeem": {
+    "instructions": {
+      "enterPromoCode": "வவுச்சரில் உள்ள விளம்பரக் குறியீட்டை உள்ளிட்டு",
+      "availOffer": "உங்களுக்கான சலுகையைப் பெறுங்கள்."
+    },
+    "labels": {
+      "enterVoucherID": "உங்கள் வவுச்சர் ஐடியை உள்ளிடவும்:"
+    },
+    "placeholders": {
+      "voucherID": "வவுச்சர் ஐடியை உள்ளிடவும்"
+    },
+    "buttons": {
+      "redeemVoucher": "வவுச்சரை மீட்டெடுக்கவும்",
+      "processing": "செயலாக்கம்..."
+    },
+    "messages": {
+      "successDefault": "வவுச்சர் வெற்றிகரமாக மீட்டெடுக்கப்பட்டது!"
+    },
+    "errors": {
+      "enterVoucherID": "தயவுசெய்து வவுச்சர் ஐடியை உள்ளிடவும்.",
+      "serviceIDMissing": "சேவை ஐடி காணவில்லை. வவுச்சரை மீட்டெடுக்க முடியவில்லை.",
+      "redeemFailed": "வவுச்சரை மீட்டெடுப்பதில் தோல்வி. தயவுசெய்து மீண்டும் முயற்சிக்கவும்.",
+      "unexpectedError": "எதிர்பாராத பிழை ஏற்பட்டது. தயவுசெய்து மீண்டும் முயற்சிக்கவும்."
+    },
+    "dialog": {
+      "processing": "செயலாக்கம்",
+      "success": "வெற்றி",
+      "processingMessage": "உங்கள் வவுச்சரை செயலாக்கும் வரை காத்திருக்கவும்..."
+    }
+  },
+  "circularProgress": {
+  "remaining": "மீதமுள்ள",
+  "used": "பயன்படுத்தப்பட்ட"
+},
+"extraGB": {
+    "pricePlan": "விலை திட்டம்",
+    "currency": "ரூ.",
+    "tax": "வரி",
+    "dataPlans": {
+      "range1to3": "1GB முதல் 3GB வரை",
+      "range5to19": "5GB முதல் 19GB வரை",
+      "range20to49": "20GB முதல் 49GB வரை",
+      "above50": "50GB க்கு மேல்"
+    },
+    "paymentMethods": {
+      "addToBill": "பில்லில் சேர்க்கவும்",
+      "payNow": "இப்போது செலுத்தவும்"
+    },
+    "termsAndConditions": {
+      "agree": "நான் ஒப்புக்கொள்கிறேன்",
+      "termsLink": "பொது விதிமுறைகள் மற்றும் நிபந்தனைகள்"
+    },
+    "messages": {
+      "success": "வெற்றி",
+      "addToBillSuccess": "பேக்கேஜ் உங்கள் பில்லில் வெற்றிகரமாக சேர்க்கப்பட்டது"
+    },
+    "errors": {
+      "selectAllOptions": "தயவுசெய்து தேவையான அனைத்து விருப்பங்களையும் தேர்ந்தெடுக்கவும்",
+      "planNotFound": "தேர்ந்தெடுக்கப்பட்ட திட்டம் கிடைக்கவில்லை",
+      "addToBillFailed": "பில்லில் சேர்க்க முடியவில்லை",
+      "noPackageOptions": "பேக்கேஜ் விருப்பங்கள் கிடைக்கவில்லை",
+      "loadPackageOptions": "பேக்கேஜ் விருப்பங்களை ஏற்ற முடியவில்லை",
+      "unexpectedError": "எதிர்பாராத பிழை ஏற்பட்டது"
+    }
+  }
+}
