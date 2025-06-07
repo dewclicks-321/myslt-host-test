@@ -1,7 +1,7 @@
 // components/VideoBackground.tsx
 import React from 'react';
 import './VideoBackground.css';
-import backgroundVideo from '../assets/background.mp4';
+import backgroundVideo from '../../assets/background.mp4';
 
 const VideoBackground: React.FC = () => {
   return (
