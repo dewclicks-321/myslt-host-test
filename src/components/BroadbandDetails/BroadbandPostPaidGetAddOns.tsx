@@ -28,7 +28,7 @@ const BroadbandPostPaidGetAddOns = () => {
   const { serviceDetails, selectedTelephone } = useStore();
   const packageName = serviceDetails?.listofBBService[0]?.packageName;
   const subscriberID:string = serviceDetails?.listofBBService[0]?.serviceID || "";
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [_activeIndex, setActiveIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -62,11 +62,16 @@ const BroadbandPostPaidGetAddOns = () => {
 
   useEffect(() => {
     const fetchPackages = async () => {
-      const response: PostpaidAddOnPackage[] =
-        await fetchLTEPostpaidAddOnPackages(packageName, subscriberID);
-      setPackages(response);
-      console.log("Packages: ", response);
-      if (response.length > 0) setSelectedItem(response[0].category);
+      const response = await fetchLTEPostpaidAddOnPackages(packageName, subscriberID);
+      // Handle potential null response
+      if (response) {
+        setPackages(response);
+        console.log("Packages: ", response);
+        if (response.length > 0) setSelectedItem(response[0].category);
+      } else {
+        setPackages([]);
+        console.log("No packages received");
+      }
     };
     fetchPackages();
   }, [selectedTelephone]);
@@ -96,8 +101,8 @@ const BroadbandPostPaidGetAddOns = () => {
       return;
     }
     const requiresCorrection =
-      packageCategory.category === "LMS" ||
-      packageCategory.category === "Home Schooling & WFH";
+      (packageCategory.category as string) === "LMS" ||
+      (packageCategory.category as string) === "Home Schooling & WFH";
     if (!requiresCorrection) {
       console.log(
         `No correction needed for category: ${packageCategory.category}`

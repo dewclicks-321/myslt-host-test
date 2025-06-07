@@ -9,11 +9,11 @@ import CircularProgressBar from "../CircularProgressBar";
 import { FaClock, FaUser } from 'react-icons/fa'
 import './BroadbandDetailsPrePaid.css'
 
-const commonTextStyle = {
-  fontSize: "14px",
-  fontWeight: 700,
-  color: "#0056A2",
-};
+// const commonTextStyle = {
+//   fontSize: "14px",
+//   fontWeight: 700,
+//   color: "#0056A2",
+// };
 
 const commonButtonStyle = {
   borderRadius: "10px",
@@ -25,18 +25,18 @@ interface CustomSectionProps {
   value: string;
 }
 
-const CustomSection = ({ label, value }: CustomSectionProps) => (
-  <Typography variant="body2" sx={commonTextStyle}>
-    {label}:
-    <Typography
-      component="span"
-      variant="body2"
-      sx={{ fontSize: "12px", fontWeight: 500, color: "#0056A2" }}
-    >
-      {` ${value}`}
-    </Typography>
-  </Typography>
-);
+// const CustomSection = ({ label, value }: CustomSectionProps) => (
+//   <Typography variant="body2" sx={commonTextStyle}>
+//     {label}:
+//     <Typography
+//       component="span"
+//       variant="body2"
+//       sx={{ fontSize: "12px", fontWeight: 500, color: "#0056A2" }}
+//     >
+//       {` ${value}`}
+//     </Typography>
+//   </Typography>
+// );
 
 const CustomSection2 = ({ label, value }: CustomSectionProps) => (
   <div className="package-details-prepaid">
@@ -92,7 +92,6 @@ interface BroadbandDetailsPrepaidTemplateProps {
 
 const BroadbandDetailsPrepaidTemplate = ({
   dataBalance,
-  isMain,
 }: BroadbandDetailsPrepaidTemplateProps) => {
   const { setLeftMenuItem, selectedTelephone } = useStore();
   const [serviceDetails, setServiceDetails] =

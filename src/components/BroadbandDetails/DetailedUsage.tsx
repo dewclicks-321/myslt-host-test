@@ -1,11 +1,11 @@
 import { Box, Typography, IconButton } from "@mui/material";
-import React from "react";
+// import React from "react";
 import useStore from "../../services/useAppStore";
 import ProgressBar from "./ProgressBar";
 import CloseIcon from '@mui/icons-material/Close';
 import DataUsageIcon from '@mui/icons-material/DataUsage';
 
-const DetailedUsage = ({ onClose }) => {
+const DetailedUsage = ({ onClose }: { onClose: () => void }) => {
   const { usageDetails } = useStore();
   const itemArray = [
     { label: "Base Package", color: "#4FD745" },

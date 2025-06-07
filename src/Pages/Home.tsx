@@ -1,12 +1,12 @@
-import React from "react";
-import homebackgroundImage from "../../src/assets/bg-dashboard.png";
+// import React from "react";
+// import homebackgroundImage from "../../src/assets/bg-dashboard.png";
 import AccountBalance from "../components/AccountBalance";
 import Banner from "../components/Banner";
 import ContentSection from "../components/ContentSection";
 import AccountSelector from "../components/AccountSelector";
 import CustomNavBar from "../components/CustomNavBar";
 import QuickAccessMenu from "../components/QuickAccessMenu";
-import ValueAddedServicesMenu from "../components/ValueAddedServicesMenu";
+// import ValueAddedServicesMenu from "../components/ValueAddedServicesMenu";
 import useStore from "../services/useAppStore";
 import Mobile from "../components/Mobile/Mobile";
 import "./Home.css"; // Import the CSS file

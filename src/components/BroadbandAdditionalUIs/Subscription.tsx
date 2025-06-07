@@ -117,7 +117,7 @@ const SubscriptionPage = () => {
                 gap: 2,
               }}
             >
-              {subscriptionDetails?.map((option, index) => (
+              {subscriptionDetails?.map((_option, index) => (
                 <Box
                   onClick={() => setSelectedSubscriptionIndex(index)}
                   key={index}

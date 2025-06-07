@@ -1,20 +1,20 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Box, Button, Card, CardContent, Typography, SvgIcon } from "@mui/material";
+import { Box, Button, Card, CardContent, Typography } from "@mui/material";
 import fetchCurrentPackage from "../../services/postpaid/fetchCurrentPackage";
 import useStore from "../../services/useAppStore";
 import { BBPackage, CurrentPackageDetails } from "../../types/types";
 import fetchPackageUpgrades from "../../services/postpaid/fetchPackageUpgrades";
 import upgradePackage from "../../services/postpaid/upgradePackage";
 
-const CustomArrowIcon = () => (
-  <SvgIcon viewBox="0 0 24 24" sx={{ fontSize: 14 }}>
-    <circle cx="12" cy="12" r="11" stroke="green" strokeWidth="2" fill="none" />
-    <path d="M10 8l4 4-4 4" stroke="green" strokeWidth="2" fill="none" />
-  </SvgIcon>
-);
+// Define interface for package items
+interface PackageItem {
+  title: string;
+  subtitle: string;
+  price: string | number;
+}
 
 const BroadbandPostPaidPackageUpgrader = () => {
-  const { serviceDetails, email } = useStore();
+  const { serviceDetails } = useStore();
   const [currentPackage, setCurrentPackage] = useState<CurrentPackageDetails>();
   const packageType = serviceDetails?.listofBBService[0]?.serviceType;
   const packageName = serviceDetails?.listofBBService[0]?.packageName;
@@ -59,8 +59,8 @@ const BroadbandPostPaidPackageUpgrader = () => {
     setActiveIndex(currentIndex);
   };
 
-  const getPackages = () => {
-    let packages = [];
+  const getPackages = (): PackageItem[] => {
+    let packages: PackageItem[] = [];
 
     if (selectedTab === "Standard") {
       packages = standardPackages.map((pkg) => ({
@@ -122,18 +122,18 @@ const BroadbandPostPaidPackageUpgrader = () => {
     getPackageUpgrades();
   }, [packageType, packageName]);
 
-  const handleActivation = async (item) => {
+  const handleActivation = async (item: PackageItem) => {
     try {
-      const response = await upgradePackage(
+      await upgradePackage(
         serviceDetails!.listofBBService[0]?.serviceID,
         serviceDetails!.listofBBService[0]?.serviceType,
         serviceDetails!.contactNamewithInit,
         serviceDetails!.contactMobile,
-        email,
+        "", // email placeholder - you may need to get this from somewhere else
         currentPackage?.bB_PACKAGE_NAME || "",
         item.title,
         currentPackage?.monthlY_RENTAL || "",
-        item.price
+        String(item.price)
       );
     } catch (error) {
       console.error("An error occurred while upgrading the package:", error);
@@ -286,40 +286,6 @@ const BroadbandPostPaidPackageUpgrader = () => {
             width: "100%",
           }}
         >
-          {/* Left Arrow
-          <Button
-            sx={{
-              position: "absolute",
-              left: -15,
-              top: "50%",
-              transform: "translateY(-50%)",
-              minWidth: "30px",
-              zIndex: 10,
-              color: "#FFFFFF",
-              fontSize: "1.5rem",
-              p: 0,
-            }}
-          >
-            ‹
-          </Button>
-
-          {/* Right Arrow */}
-          {/* <Button
-            sx={{
-              position: "absolute",
-              right: -15,
-              top: "50%",
-              transform: "translateY(-50%)",
-              minWidth: "30px",
-              zIndex: 10,
-              color: "#FFFFFF",
-              fontSize: "1.5rem",
-              p: 0,
-            }}
-          >
-            ›
-          </Button> */} 
-
           <Box
             ref={scrollRef}
             onScroll={handleScroll}
@@ -441,77 +407,6 @@ const BroadbandPostPaidPackageUpgrader = () => {
                     boxShadow: "none",
                   }}
                 >
-                  {/* <CardContent sx={{ p: 2 }}>
-                    <Box
-                      sx={{
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        textAlign: "center",
-                      }}
-                    >
-                      <Typography
-                        variant="h6"
-                        sx={{
-                          mb: 1.5,
-                          fontWeight: "bold",
-                          color: "#FFFFFF",
-                          fontSize: "1.2rem",
-                        }}
-                      >
-                        Any Tide
-                      </Typography>
-
-                      <Box
-                        sx={{
-                          width: "100%",
-                          border: "1px solid #FFFFFF",
-                          padding: 1.5,
-                          borderRadius: 1,
-                          backgroundColor: "transparent",
-                          color: "#FFFFFF",
-                          fontFamily:"Poppins, sans-serif",
-                          mb: 1.5,
-                        }}
-                      >
-                        <Typography variant="body2" sx={{ fontWeight: "medium", fontSize: "0.85rem" }}>
-                          120GB AnyTime BB - FTTH
-                        </Typography>
-                      </Box>
-
-                      <Typography
-                        variant="subtitle1"
-                        sx={{ mb: 1.5, fontWeight: "bold", fontSize: "1rem" }}
-                      >
-                        Rs. 4890 + Tax
-                        <Typography component="span" variant="body2" sx={{ display: "block", fontSize: "0.75rem" }}>
-                          (Per Month)
-                        </Typography>
-                      </Typography>
-
-                      <Button
-                        variant="contained"
-                        sx={{
-                          backgroundColor: "#5EC890",
-                          color: "#FFFFFF",
-                          borderRadius: "50px",
-                          width: "80%",
-                          py: 1,
-                          textTransform: "none",
-                          fontSize: "0.9rem",
-                          fontWeight: "500",
-                          "&:hover": {
-                            backgroundColor: "#4DB07F",
-                          },
-                        }}
-                        onClick={() => {
-                          handleActivation({ title: "Any Tide", price: 4890 });
-                        }}
-                      >
-                        Upgrade
-                      </Button>
-                    </Box>
-                  </CardContent> */}
                 </Card>
               ))
             )}

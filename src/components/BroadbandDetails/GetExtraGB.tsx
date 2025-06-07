@@ -10,15 +10,15 @@ import {
   DialogActions,
   CircularProgress
 } from "@mui/material";
-import AddToBillImage from "../../assets/Images/subscriptionPageImages/GetExtraGBAdd.jpeg";
-import PayNowImage from "../../assets/Images/subscriptionPageImages/GetExtraGBPay.jpeg";
-import WatermarkLogo from "../../assets/Images/watermarklogo.png";
+// import AddToBillImage from "../../assets/Images/subscriptionPageImages/GetExtraGBAdd.jpeg";
+// import PayNowImage from "../../assets/Images/subscriptionPageImages/GetExtraGBPay.jpeg";
+// import WatermarkLogo from "../../assets/Images/watermarklogo.png";
 import useStore from "../../services/useAppStore";
 import { useTranslation } from 'react-i18next';
 import fetchPackageDetails from "../../services/postpaid/fetchPackageDetails";
 import activatepackagedetails from "../../services/postpaid/activatepackagedetails";
-import axios from "axios";
-import fetchServiceDetailByTelephone from "../../services/fetchServiceDetails";
+// import axios from "axios";
+// import fetchServiceDetailByTelephone from "../../services/fetchServiceDetails";
 
 
 
@@ -30,7 +30,7 @@ interface DataPlan {
 interface PackageDetail {
   volume: number;
   postPrice: string;
-  packageId: string;
+  packageId: number; // Changed from string to number to match dataBundle type
 }
 
 // const dataPlans: DataPlan[] = [
@@ -44,11 +44,11 @@ interface DataPlanProps {
   packageName: string | null;
 }
 
-interface PaymentResponse {
-  success: boolean;
-  error?: string;
-  message?: string;
-}
+// interface PaymentResponse {
+//   success: boolean;
+//   error?: string;
+//   message?: string;
+// }
 
 
 const GetExtraGbPage: React.FC<DataPlanProps> = ({ packageName }) => {
@@ -145,7 +145,8 @@ const GetExtraGbPage: React.FC<DataPlanProps> = ({ packageName }) => {
   
       if (paymentMethod === "addToBill") {
         console.log("📝 [Action] Adding to bill...");
-        const response = await activatepackagedetails(serviceID, selectedPlan.packageId);
+        // Convert packageId to string for the API call
+        const response = await activatepackagedetails(serviceID, selectedPlan.packageId.toString());
         console.log("📄 [Response] Activation:", response);
         
         if (!response?.isSuccess) {
@@ -165,10 +166,10 @@ const GetExtraGbPage: React.FC<DataPlanProps> = ({ packageName }) => {
           subscriberID: serviceID,
           prepaidID:"EGB",
           reciever:  serviceID,
-          packageId: selectedPlan.packageId,
+          packageId: selectedPlan.packageId.toString(), // Convert to string for form submission
           channel: "SLTPRE",
           commitUser: "OmniAPP",
-          reporterPackage: selectedPlan.packageId,
+          reporterPackage: selectedPlan.packageId.toString(), // Convert to string for form submission
           activatedBy: serviceID,
           callbackURLSLT: "", 
         };
@@ -635,4 +636,4 @@ const GetExtraGbPage: React.FC<DataPlanProps> = ({ packageName }) => {
   );
 };
 
-export default GetExtraGbPage;
+export default GetExtraGbPage;

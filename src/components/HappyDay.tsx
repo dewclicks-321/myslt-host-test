@@ -33,9 +33,9 @@ const HappyDay: React.FC = () => {
     setSelectedDate(date);
   };
 
-  const handleDialogOpen = () => {
-    setDialogOpen(true);
-  };
+  // const handleDialogOpen = () => {
+  //   setDialogOpen(true);
+  // };
 
   const handleDialogClose = () => {
     setDialogOpen(false);

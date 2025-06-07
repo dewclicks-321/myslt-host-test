@@ -71,7 +71,7 @@ const CustomNavBar = () => {
               className={`service-item ${selectedItem === item.id ? "active" : ""} ${disabled ? "disabled" : ""}`}
               onClick={() => !disabled && handleItemClick(item.id)}
             >
-              {item.icon && <div className="service-icon">{item.icon}</div>}
+              {'icon' in item && item.icon && <div className="service-icon">{item.icon}</div>}
               <div className="service-name-sidebar">{item.name}</div>
             </div>
           );

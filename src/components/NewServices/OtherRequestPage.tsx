@@ -79,20 +79,20 @@ const OtherRequestPage: React.FC<OtherRequestPageProps> = ({ telephoneNo, select
   };
   
   
-  const ButtonStyle = (isSelected: boolean) => ({
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    width: isSelected ? 27.5 : 25,
-    height: isSelected ? 27.5 : 25,
-    padding: 1.5,
-    border: isSelected ? "4px solid #0056A2" : "3px solid #0056A2",
-    borderRadius: "100%",
-    transition: "all 0.3s ease",
-    "&:hover": {
-      transform: isSelected ? "scale(1)" : "scale(1.1)",
-    },
-  });
+  // const ButtonStyle = (isSelected: boolean) => ({
+  //   display: "flex",
+  //   justifyContent: "center",
+  //   alignItems: "center",
+  //   width: isSelected ? 27.5 : 25,
+  //   height: isSelected ? 27.5 : 25,
+  //   padding: 1.5,
+  //   border: isSelected ? "4px solid #0056A2" : "3px solid #0056A2",
+  //   borderRadius: "100%",
+  //   transition: "all 0.3s ease",
+  //   "&:hover": {
+  //     transform: isSelected ? "scale(1)" : "scale(1.1)",
+  //   },
+  // });
 
   const handleSubmit = async () => {
     console.log("Form Submitted. Selected Items:", selectedItems); 
@@ -100,7 +100,7 @@ const OtherRequestPage: React.FC<OtherRequestPageProps> = ({ telephoneNo, select
     console.log("Service Type Selected:", selectedItem);
 
     // Assuming you have firstName, lastName, nic, contactTelNo, and selectedItems populated
-    const description = selectedItems.join(", "); // For example, describe the selected services
+    // const description = selectedItems.join(", "); // For example, describe the selected services
 
     const response: SalesLeadCreationResponse | null = await createSalesLead(
       telephoneNo,
@@ -222,7 +222,7 @@ const OtherRequestPage: React.FC<OtherRequestPageProps> = ({ telephoneNo, select
   }}
 >
         {buttonItems.map((item) => {
-          const isSelected = selectedItems.includes(item.label);
+          // const isSelected = selectedItems.includes(item.label);
           
           return (
             <Box

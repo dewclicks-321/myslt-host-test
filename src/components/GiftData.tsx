@@ -1,4 +1,4 @@
-import { Box, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField, Typography } from "@mui/material";
+import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 // import WatermarkLogo from "../assets/Images/watermarklogo.png";
 import { textFieldStyle } from "../assets/Themes/CommonStyles";
@@ -9,18 +9,18 @@ import { useTranslation } from 'react-i18next';
 const GiftData: React.FC = () => {
   const { t } = useTranslation();
   const [username, setUsername] = useState("");
-  const [apiResponse, setApiResponse] = useState<string | null>(null);
+  const [_apiResponse, setApiResponse] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
   // new
   const [loading, setLoading] = useState(false);
-  const [showMessage, setShowMessage] = useState(true);
+  const [showMessage] = useState(true);
   const [message, setMessage] = useState("");
 
   // Fetch serviceDetails and mobile number from the store
-  const { serviceDetails, setLeftMenuItem, giftDataMobileNumber, setGiftDataMobileNumber } = useStore();
+  const { serviceDetails, setLeftMenuItem, setGiftDataMobileNumber } = useStore();
   const serviceID = serviceDetails?.listofBBService[0]?.serviceID;
 
   // UseEffect to log serviceID whenever it changes

@@ -76,6 +76,7 @@ const UnderConstruction = () => {
     </Box>
   );
 };
+
 const ContentSection = () => {
   const [addOnData, setAddOnData] = useState<DataBalance[]>([]);
   const [mainData, setMainData] = useState<DataBalance[]>([]);
@@ -87,13 +88,15 @@ const ContentSection = () => {
     selectedNavbarItem,
     packageName,
     serviceDetails,
-    setEmail,
+    // Remove setEmail if it doesn't exist in your store
+    // setEmail,
     setDetailReportAvailability
   } = useStore();
 
-  const isPrepaid =
-      serviceDetails?.promotionType === "Prepaid" ||
-      serviceDetails?.promotionType === null;
+  // Remove unused isPrepaid variable
+  // const isPrepaid =
+  //     serviceDetails?.promotionType === "Prepaid" ||
+  //     serviceDetails?.promotionType === null;
       
   const disabledItems = [
     "New Services",
@@ -117,7 +120,8 @@ const ContentSection = () => {
       if (subcriberID) {
         const response = await fetchDetaliedReportAvailability(subcriberID);
         setDetailReportAvailability(response!["availability"]);
-        setEmail(response!["email"]);
+        // Remove setEmail call if it doesn't exist in your store
+        // setEmail(response!["email"]);
       }
     };
     getDetailedReportAvalability();
@@ -189,7 +193,8 @@ const ContentSection = () => {
           {selectedLeftMenuItem === "BroadbandPasswordChange" && (
             <ChangeBroadbandPassword />
           )}
-          {selectedLeftMenuItem === "DetailedUsageDetails" && <DetailedUsage />}
+          {/* Add onClose prop to DetailedUsage */}
+          {selectedLeftMenuItem === "DetailedUsageDetails" && <DetailedUsage onClose={() => {}} />}
           {selectedLeftMenuItem === "ProtocolReport" && <ProtocolReport />}
   
           {selectedLeftMenuItem === "PostPaidPackageUpgrade" && (
@@ -223,16 +228,16 @@ const ContentSection = () => {
             <TransactionsHistory serviceId={selectedTelephone} />
           )}
   
-          {/*PeoTV*/}
+          {/*PeoTV - Only show when navbar is Broadband*/}
           {selectedLeftMenuItem === "My Package" &&
-            selectedNavbarItem === "PeoTV" && <MyPackagePeotv />}
+            selectedNavbarItem === "Broadband" && <MyPackagePeotv />}
           {selectedLeftMenuItem === "VOD" && <VideoOnDemand />}
           {selectedLeftMenuItem === "PEOTVGO" && <PeoTvGo />}
           {selectedLeftMenuItem === "Packages" && <PeoTvPackages />}
   
-          {/*Voice*/}
+          {/*Voice - Only show when navbar is Broadband*/}
           {selectedLeftMenuItem === "My Package" &&
-            selectedNavbarItem === "Voice" && <MyPackageVoice />}
+            selectedNavbarItem === "Broadband" && <MyPackageVoice />}
           {selectedLeftMenuItem === "Call Forwarding" && (
             <CallForwarding telephoneNo={selectedTelephone} />
           )}
@@ -303,7 +308,8 @@ const ContentSection = () => {
           {selectedLeftMenuItem === "BroadbandPasswordChange" && (
             <ChangeBroadbandPassword />
           )}
-          {selectedLeftMenuItem === "DetailedUsageDetails" && <DetailedUsage />}
+          {/* Add onClose prop to DetailedUsage */}
+          {selectedLeftMenuItem === "DetailedUsageDetails" && <DetailedUsage onClose={() => {}} />}
           {selectedLeftMenuItem === "ProtocolReport" && <ProtocolReport />}
   
           {selectedLeftMenuItem === "PostPaidPackageUpgrade" && (

@@ -25,7 +25,7 @@ const AccountBalance: React.FC = () => {
   const { t } = useTranslation();
   const { serviceDetails, selectedTelephone, setLeftMenuItem } = useStore();
   const [amount, setAmount] = useState<string>("");
-  const [expireTime, setExpireTime] = useState<string>(""); // State for expire time
+  const [_expireTime, setExpireTime] = useState<string>(""); // State for expire time
   const [billingAmount, setBillingAmount] = useState<string | null>(null); // State for billing amount
   const isPrepaid = (serviceDetails as ServiceDetails)?.promotionType === "Prepaid";
 

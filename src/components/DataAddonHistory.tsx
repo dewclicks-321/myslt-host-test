@@ -35,7 +35,7 @@ const PurchaseHistoryComponent: React.FC = () => {
     try {
       const formattedFrom = historyFrom.toLocaleDateString("en-CA");
       const formattedTo = historyTo.toLocaleDateString("en-CA");
-      const data = await fetchPurchaseHistory(subscriberID, formattedFrom, formattedTo);
+      const data = await fetchPurchaseHistory(subscriberID!, formattedFrom, formattedTo);
       setPurchaseHistory(data && data.length > 0 ? data : []);
     } catch {
       setError("Failed to fetch purchase history. Please try again.");
@@ -135,7 +135,7 @@ const PurchaseHistoryComponent: React.FC = () => {
               selected={historyFrom}
               onChange={handleFromDateChange}
               dateFormat="yyyy-MM-dd"
-              maxDate={historyTo}
+              maxDate={historyTo || undefined}
               customInput={
                 <TextField
                   variant="outlined"
@@ -170,7 +170,7 @@ const PurchaseHistoryComponent: React.FC = () => {
               selected={historyTo}
               onChange={handleToDateChange}
               dateFormat="yyyy-MM-dd"
-              minDate={historyFrom}
+              minDate={historyFrom || undefined}
               customInput={
                 <TextField
                   variant="outlined"
