@@ -32,7 +32,7 @@ const GetGiftDataPage: React.FC = () => {
 
   useEffect(() => {
     if (serviceID) {
-      getDataGiftPackages(serviceID, "GiftPackage")
+      getDataGiftPackages(serviceID)
         .then((data) => {
           setApiData(data);
           data?.dataBundle?.forEach((packageItem: any) => {
