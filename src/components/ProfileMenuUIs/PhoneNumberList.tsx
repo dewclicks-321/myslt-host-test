@@ -15,7 +15,7 @@ import { useNavigate } from "react-router-dom";
 import fetchAccountDetails from "../../services/fetchAccountDetails";
 import removeAccount from "../../services/profile/removeAccount";
 import AddAccountForm from "../AddAccountForm"; 
-import UserIcon from "../../assets/Images/Manage Profile.png";
+import UserIcon from "../../assets/Manage Profile.png";
 
 const PhoneNumberList: React.FC = () => {
   const [phoneNumbers, setPhoneNumbers] = useState<

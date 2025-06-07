@@ -1,13 +1,13 @@
 import { Box, Button, Card, CardContent, Typography } from "@mui/material";
 import React from "react";
-import CCTVImage from "../assets/images/DigitalLifeImages/CCTV.jpg";
-import DuthayaImage from "../assets/images/DigitalLifeImages/Duthaya.jpg";
-import eSiphalaImage from "../assets/images/DigitalLifeImages/esiphala.jpg";
-import eSportImage from "../assets/images/DigitalLifeImages/eSport.jpg";
-import KasperskyImage from "../assets/images/DigitalLifeImages/kaspersky.jpg";
-import SLTStorageImage from "../assets/images/DigitalLifeImages/sltStorage.jpg";
-import SLTLynkedImage from "../assets/images/DigitalLifeImages/SLTLynked.png";
-import SmartHomeImage from "../assets/images/DigitalLifeImages/smartHome.jpg";
+import CCTVImage from "../assets/CCTV.jpg";
+import DuthayaImage from "../assets/Duthaya.jpg";
+import eSiphalaImage from "../assets/esiphala.jpg";
+import eSportImage from "../assets/eSport.jpg";
+import KasperskyImage from "../assets/kaspersky.jpg";
+import SLTStorageImage from "../assets/sltStorage.jpg";
+import SLTLynkedImage from "../assets/SLTLynked.png";
+import SmartHomeImage from "../assets/smartHome.jpg";
 
 type Service = {
   id: number;

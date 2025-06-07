@@ -16,7 +16,7 @@ import addBroadbandPackage from "../../services/prepaid/addBroadbandPackage";
 import { fetchLTEPrepaidAddOnPackages } from "../../services/prepaid/fetchLTEPrepaidAddOnPackages";
 import useStore from "../../services/useAppStore";
 import { BroadbandPrepaidAddOnPackageDetails } from "../../types/types";
-import bgImage from "../../assets/Images/pred.jpg";
+import bgImage from "../../assets/pred.jpg";
  
 const BroadbandPrepaidAddOnPackages: React.FC = () => {
   const { selectedTelephone, setLeftMenuItem, setPackageListUpdate } = useStore();

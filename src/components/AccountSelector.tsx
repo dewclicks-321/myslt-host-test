@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import userImage from "../../src/assets/avatar.png";
+import userImage from "../assets/avatar.png";
 import fetchAccountDetails from "../services/fetchAccountDetails";
 import useStore from "../services/useAppStore";
 import { AccountDetails } from "../types/types";

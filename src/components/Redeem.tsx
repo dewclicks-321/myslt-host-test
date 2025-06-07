@@ -15,7 +15,7 @@ import Voucher from "../assets/voucher.png";
 import redeemVoucher from "../services/postpaid/redeemVoucher";
 import useStore from "../services/useAppStore";
 import { useTranslation } from 'react-i18next';
-import { textFieldStyle } from "../assets/Themes/CommonStyles";
+import { textFieldStyle } from "../assets/CommonStyles";
 
 const Redeem: React.FC = () => {
   const { t } = useTranslation();

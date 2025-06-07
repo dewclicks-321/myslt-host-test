@@ -1,6 +1,6 @@
 import { AppBar, Avatar, Box, Container, FormControl, IconButton, MenuItem, Popover, Select, SelectChangeEvent, Toolbar } from "@mui/material";
 import { useEffect, useState } from "react";
-import userImage from "../../src/assets/Images/profile.jpg";
+import userImage from "../../src/assets/profile.jpg";
 import fetchAccountDetails from "../services/fetchAccountDetails";
 import useStore from "../services/useAppStore";
 import { AccountDetails } from "../types/types";

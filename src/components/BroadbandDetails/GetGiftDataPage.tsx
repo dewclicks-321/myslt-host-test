@@ -2,8 +2,8 @@ import { Box, Button, Checkbox, Dialog, DialogActions, DialogContent, DialogTitl
 import React, { useEffect, useState } from "react";
 
 // Replace with your image paths
-import AddToBillImage from "../../assets/Images/subscriptionPageImages/GetExtraGBAdd.jpeg";
-import PayNowImage from "../../assets/Images/subscriptionPageImages/GetExtraGBPay.jpeg";
+import AddToBillImage from "../../assets/GetExtraGBAdd.jpeg";
+import PayNowImage from "../../assets/GetExtraGBPay.jpeg";
 import WatermarkLogo from "../../assets/Images/watermarklogo.png";
 
 import enrollDataGift from "../../services/postpaid/enrollDataGift";

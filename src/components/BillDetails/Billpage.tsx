@@ -9,7 +9,7 @@ import Navbar from "./BillDetailNavbar";
 import BillDetails from "./BillDetails";
 import OutstandingBills from "./BillHistory";
 import BillMethod from "./BillMethod";
-import BillIcon from "../../assets/Images/Vector.png";
+import BillIcon from "../../assets/Vector.png";
 
 interface BillPageProps {
   telephoneNo: string;

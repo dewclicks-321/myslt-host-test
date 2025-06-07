@@ -19,7 +19,7 @@ import React, { useState } from "react";
 // Import the API function
 import createFaultRequest from "../services/createFaultRequest";
 import useStore from "../services/useAppStore";
-import headsetIcon from "../assets/images/Group.png"; // Add this icon to your project
+import headsetIcon from "../assets/Group.png"; // Add this icon to your project
 
 interface AddComplaintsProps {
   telephoneNo: string;

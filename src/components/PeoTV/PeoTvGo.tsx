@@ -1,5 +1,5 @@
 import Box from "@mui/material/Box";
-import PeoTvGoImage from "../../assets/Images/Rectangle 151.png";
+import PeoTvGoImage from "../../assets/Rectangle 151.png";
 import { Typography } from "@mui/material";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Pstore from "../../assets/google-play-2.png";

@@ -14,9 +14,9 @@ import TvIcon from '@mui/icons-material/Tv';
 import PhoneIcon from '@mui/icons-material/Phone';
 import WifiIcon from '@mui/icons-material/Wifi';
 // Keep these imports for compatibility with the rest of the code
-import BroadbandIcon from "../../assets/Images/NewServiceIcons/Broadband.png";
-import PeoTVIcon from "../../assets/Images/NewServiceIcons/PeoTV.png";
-import VoiceIcon from "../../assets/Images/NewServiceIcons/Voice.png";
+import BroadbandIcon from "../../assets/Broadband.png";
+import PeoTVIcon from "../../assets/PeoTV.png";
+import VoiceIcon from "../../assets/Voice.png";
 import createSalesLead, { SalesLeadCreationResponse } from "../../services/postpaid/createSalesLead"; // Import the API function
 
 // Define props for the component

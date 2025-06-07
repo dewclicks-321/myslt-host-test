@@ -1,10 +1,10 @@
 import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
-import vas1 from "../assets/images/VASIcons/Group 39680.png";
-import vas2 from "../assets/images/VASIcons/Group 39681.png";
-import vas3 from "../assets/images/VASIcons/Group 39682.png";
-import vas4 from "../assets/images/VASIcons/Group 39683.png";
-import vas5 from "../assets/images/VASIcons/Group 39684.png";
+import vas1 from "../assets/Group 39680.png";
+import vas2 from "../assets/Group 39681.png";
+import vas3 from "../assets/Group 39682.png";
+import vas4 from "../assets/Group 39683.png";
+import vas5 from "../assets/Group 39684.png";
 import VasIcon from "./VasIcon";
 
 const ValueAddedServicesMenu = () => {

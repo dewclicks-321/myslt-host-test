@@ -9,8 +9,8 @@ import {
   InputAdornment,
 } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
-import WatermarkLogo from "../../assets/Images/watermarklogo.png";
-import { textFieldStyle } from "../../assets/Themes/CommonStyles";
+import WatermarkLogo from "../../assets/watermarklogo.png";
+import { textFieldStyle } from "../../assets/CommonStyles";
 
 const ChangeBroadbandPassword = () => {
   const [showPassword, setShowPassword] = useState(false);

@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import FiberRequestPage from "./FiberRequestPage";
 import OtherRequestPage from "./OtherRequestPage";
-import Sicon from "../../assets/Images/sicon.png";
+import Sicon from "../../assets/sicon.png";
 
 
 // Define props for the NewServicesPage component

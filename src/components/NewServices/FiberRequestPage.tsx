@@ -2,7 +2,7 @@ import { Button, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import fiberCharacter from "../../assets/fiber-mascot.png";
 import OrderAnimation from "../OrderComponent/Order";
-import Mock from "../../assets/Images/Quantum Fiber.jpg"; // Import your background
+import Mock from "../../assets/Quantum Fiber.jpg"; // Import your background
 
 import { useState } from "react";
 
