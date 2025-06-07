@@ -19,10 +19,10 @@ function AuthLayout({ children }: AuthLayoutProps) {
               <h2>Stay connected with ease. Download the SLT app today!</h2>
               <div className="app-buttons">
                 <a href="#" className="app-button ios">
-                  <img src="src/assets/app-store.png" alt="Download on the App Store" />
+                  <img src="/app-store.png" alt="Download on the App Store" />
                 </a>
                 <a href="#" className="app-button android">
-                  <img src="src/assets/google-play.png" alt="Get it on Google Play" />
+                  <img src="/google-play.png" alt="Get it on Google Play" />
                 </a>
               </div>
             </div>
